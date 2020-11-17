@@ -5,9 +5,13 @@ Home: https://github.com/mapequation/infomap
 
 Package license: AGPL-3.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/infomap-feedstock/blob/master/LICENSE.txt)
 
 Summary: Multi-level network clustering based on the Map Equation
+
+Development: https://github.com/mapequation/infomap
+
+Documentation: https://github.com/mapequation/infomap/tree/master/docs
 
 Multi-level network clustering based on the Map Equation.
 

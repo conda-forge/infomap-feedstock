@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: infomap
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/mapequation/infomap/archive/v{{ version }}.tar.gz
-  sha256: 85ac3498966d9a13c063dfa2db812ccab0a75d3eda7e7532d4d3718e85e69d89
+  sha256: 8c18015d16ebd90e15cec0f754b7ebe537aa61c6dfd84c528890084519ceac0a
 
 build:
   number: 0
