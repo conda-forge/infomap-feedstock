@@ -1,4 +1,4 @@
-{% set version = "1.4.1" %}
+{% set version = "2.8.0" %}
 
 package:
   name: infomap
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/mapequation/infomap/archive/v{{ version }}.tar.gz
-  sha256: 13414b9ae03d732f15c3109a10db887dfd44066e65c4db0e73179eb3a8ad9b28
+  sha256: 17eff0882afa5de9bf68f2fba013b06be43d618191859e6723e008e744944e36
 
 build:
   number: 0
@@ -14,24 +14,31 @@ build:
 
 requirements:
   build:
-    - {{ compiler('cxx') }}
+    - {{ compiler("cxx") }}
     - libgomp  # [linux]
 
 test:
+  imports:
+    - infomap
   commands:
-    - Infomap -h
+    - pip check
+    - infomap --help
+  requires:
+    - pip
+    - python {{ python_min }}
 
 about:
-  home: https://github.com/mapequation/infomap
+  home: https://mapequation.github.io
   license: AGPL-3.0
   license_family: GPL
   license_file: LICENSE_AGPLv3.txt
   summary: Multi-level network clustering based on the Map Equation
   description: |
     Multi-level network clustering based on the Map Equation.
-  doc_url: https://github.com/mapequation/infomap/tree/master/docs
+  doc_url: https://mapequation.github.io/infomap/python/
   dev_url: https://github.com/mapequation/infomap
 
 extra:
   recipe-maintainers:
+    - apcamargo
     - vinisalazar
