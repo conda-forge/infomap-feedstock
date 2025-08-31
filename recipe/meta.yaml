@@ -40,7 +40,7 @@ about:
   home: https://mapequation.github.io
   license: GPL-3.0-or-later
   license_family: GPL
-  license_file: LICENSE_AGPLv3.txt
+  license_file: LICENSE
   summary: Multi-level network clustering based on the Map Equation
   description: |
     Multi-level network clustering based on the Map Equation.
