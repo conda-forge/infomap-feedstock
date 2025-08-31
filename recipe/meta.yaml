@@ -5,23 +5,29 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/mapequation/infomap/archive/v{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/infomap-{{ version }}.tar.gz
   sha256: 17eff0882afa5de9bf68f2fba013b06be43d618191859e6723e008e744944e36
 
 build:
   number: 0
   skip: true  # [win]
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   build:
     - {{ stdlib("c") }}
-    - {{ compiler("c") }}
     - {{ compiler("cxx") }}
     - libgomp  # [linux]
+  host:
+    - python
+    - pip
+  run:
+    - python
 
 test:
   imports:
     - infomap
+    - package_meta
   commands:
     - pip check
     - infomap --help
