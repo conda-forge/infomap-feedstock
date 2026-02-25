@@ -340,6 +340,3 @@ Feedstock Maintainers
 * [@apcamargo](https://github.com/apcamargo/)
 * [@vinisalazar](https://github.com/vinisalazar/)
 
-
-<!-- dummy commit to enable rerendering -->
-
