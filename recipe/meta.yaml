@@ -11,7 +11,7 @@ source:
   sha256: 35c553afef376315e6466baf5f78f626942e312c9042f583749b606bd74c7ac9
 
 build:
-  skip: true  # [win or py<311]
+  skip: true  # [py<311]
   entry_points:
     - infomap = infomap:main
   noarch: python
