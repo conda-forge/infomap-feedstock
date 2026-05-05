@@ -11,9 +11,12 @@ source:
   sha256: 35c553afef376315e6466baf5f78f626942e312c9042f583749b606bd74c7ac9
 
 build:
-  number: 0
   skip: true  # [win or py<311]
+  entry_points:
+    - infomap = infomap:main
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
 
 requirements:
   build:
