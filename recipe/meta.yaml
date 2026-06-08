@@ -1,5 +1,5 @@
 {% set name = "infomap" %}
-{% set version = "2.9.2" %}
+{% set version = "2.12.0" %}
 
 package:
   name: infomap
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/infomap-{{ version }}.tar.gz
-  sha256: e0c61ded3531bcff019a024d6e37396e920db9ffdf43a6caca0b68b71e404036
+  sha256: fc3da6567d054a9daa2f047115c023f8e15853529a286a349da0ee3b13644e76
 
 build:
   number: 0
