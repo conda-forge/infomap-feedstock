@@ -26,6 +26,7 @@ requirements:
     - pip
     - setuptools >=68
     - wheel
+    - llvm-openmp  # [osx]
   run:
     - python
 
