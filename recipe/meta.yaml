@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/infomap-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/infomap-{{ version }}.tar.gz
   sha256: fc5e702130609a08bc903707f0fca3b8f585ba4b16ef730ee93c7bb9e2d80c66
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win or py<311]
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
