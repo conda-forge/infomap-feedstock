@@ -1,5 +1,5 @@
 {% set name = "infomap" %}
-{% set version = "2.15.1" %}
+{% set version = "2.16.0" %}
 
 package:
   name: infomap
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/infomap-{{ version }}.tar.gz
-  sha256: fc5e702130609a08bc903707f0fca3b8f585ba4b16ef730ee93c7bb9e2d80c66
+  sha256: 1e1f13458cbc6fa4d89c559acf5e0bcfd11c5012100dff022f5861a871b56d70
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win or py<311]
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
